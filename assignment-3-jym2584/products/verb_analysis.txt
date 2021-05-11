@@ -1,0 +1,18 @@
+Product
+    Name: String
+    Product Code: int
+    MSRP: double
+
+Truck
+    Capacity: int
+    Load (Product): Product[]
+    Unload (Product): Product[]
+
+Factory
+    Type: Product
+    Manufacture (method): this.Type
+
+Complex
+    Factories: Factory[]
+    Trucks: Truck[]
+    loadToTrucks

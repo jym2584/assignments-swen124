@@ -1,0 +1,34 @@
+NETWORKING VOCAB
+____ - The term for the software and hardware that allows computers to communicate.
+
+____ - A 32-bit number used to identify a computer on a network.
+
+____ - The network layer protocol responsible for routing and relaying packets of data on the internet.
+
+____ - The transport layer protocol that insures that packets are delivered in order, reliably and without corruption.
+
+____ - A human-readable identifier for a computer.
+
+____ - The special name that always refers to the local computer.
+
+____ - The term for the address, 127.0.0.1, that always refers to the local computer.
+
+____ - A server used to translate names into addresses.
+
+____ - A faster but potentially less reliable protocol for sending packets of information.
+
+____ - A unique identifier for some resource on the Internet. Includes a service such as HTTP or FTP, the address of a computer, and resource information.
+
+
+
+NETWORKING ERRORS
+
+____ - Your server is trying to start listening for connections on some port, but the port is already in use by some other process.
+
+____ - Your client is trying to connect to a port on the server but the server is not listening for connections on that port.
+
+____ - You attempted to read from or write to a socket, but the connection has already been closed.
+
+____ - You are trying to establish a connection to an hostname or address that does not exist on the network.
+
+____ - Any other kind of general error.

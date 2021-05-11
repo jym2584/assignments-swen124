@@ -1,0 +1,4 @@
+1. list of queens, how big the board is0
+2. if the 2 queens cant attack each other
+3. if we iterate through our entire board 12x12, there should be 12 queens
+4. set of next possibel moves

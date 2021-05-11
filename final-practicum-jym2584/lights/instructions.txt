@@ -1,0 +1,97 @@
+Part 1: A Light Interface
+
+A light has a luminosity that ranges from a minimum of 0 (when the light is 
+off) to a maximum of 100. A light also includes a switch that can be flipped.
+
+Define a new Java interface in a file called "Light.java" in the 
+"lightswitch.model" package. Make sure to include constants for the minimum and 
+maximum luminosity, as well as methods to flip the switch and to get the 
+current luminosity.
+
+A basic light has two settings: off and on. Flipping the switch on the light
+toggles it from one setting to the other. The basic light starts in the off 
+setting. Write a new Java class in a file named "BasicLight.java" in the 
+"lightswitch.model" package that implements a basic light.
+
+A dimmable light has three settings: off, dim (50%), and on (100%). Flipping 
+the switch will rotate through the settings in order: off -> dim -> on -> off. 
+The dimmable light starts in the off setting. Write a new Java class in a file
+named "DimmableLight.java" in the "lightswitch.model" package that implements 
+a dimmable light.
+
+
+
+Part 2: Observable Lights
+
+Other parts of the program may be interested in being notified whenever the
+luminosity of a light changes, i.e. when its switch is flipped. Define a new
+Java interface in a file named "LightObserver.java" in the "lightswitch.model" 
+package. Define a method that should be called on an observer when the switch
+on a light is flipped. What parameter(s) should the method include?
+
+Next, add methods to the Light interface for registering and deregistering 
+observers.
+
+You will need to modify the existing Light implementations so support notifying
+registered observers whenever the switch is flipped and the luminosity changes.
+For full credit, your updated classes should minimize code duplication. Hint:
+consider adding a new class.
+
+
+
+Part 3: A Light GUI
+
+Implement a simple JavaFX GUI that provides a button that can be used to flip
+the switch on any light. A screenshot of a possible GUI has been provided to 
+you, but you do not need to match it exactly. You must meet the following
+requirements:
+
+* You should be able to change the specific Light implementation that is used
+  by the GUI by changing ONE line of code, i.e. the class that is being 
+  constructed.
+
+* A button or other JavaFX control MUST be used to flip the switch on the 
+  current light. The Observer Pattern implemented in Part 3 MUST be used to 
+  update the display if/when the luminosity of the current light changes.
+
+* You should use Color.BLACK to represent a light at 0 luminisoty, Color.YELLOW
+  to represent a light at 100% luminosity, and a third color of your choice to
+  represent a light at any luminisity > 0 and < 100. Hint: the constructor for
+  the Color class accepts parameters for red, green, blue, and alpha 
+  (transparency).
+
+
+
+Part 4: A Light Timer
+
+Some energy saving lights turn off automatically after a specific amount of
+time has passed. Implement a new Java class in a file called "LightTimer.java"
+that works with any Light. This new class should be a Thread. Whenever its 
+light is switched on, it should wait 5 seconds before switching the light off.
+Keep in mind that for some lights this may mean having to flip the switch more
+than once! The thread should run indefinitely so that the light is turned off
+within 5 seconds every time that it is turned on.
+
+You will get most of the credit for this part if you simply poll the light on a
+5 second interval. However, to receive full credit, your thread must NOT use
+polling or a busy/wait loop, but instead should only start the 5 second timer
+whenever the light is turned on. 
+
+Modify your JavaFX GUI to create and start one of your threads. You should now
+be able to turn the light on, and see the GUI update 5 seconds later when it is
+automatically turned off by your thread.
+
+There is a chance that you will see an exception very similar to the one below 
+when you run your code:
+
+Exception in thread "Thread-3" java.lang.IllegalStateException: Not on FX 
+application thread; currentThread = Thread-3
+
+If this happens, your light will not turn off, but your code is working. You
+do not need to fix it. If you would like to try, use the following line of code
+(you will need to import the Platform class from JavaFX):
+
+Platform.runLater(() -> {
+  // code to turn off light
+});
+

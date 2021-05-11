@@ -1,0 +1,26 @@
+{
+    "java.project.sourcePaths": [
+        ""
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\junit-platform-console-standalone-1.7.0-all.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\junit-platform-console-standalone-1.8.0-M1.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx.base.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx.controls.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx.fxml.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx.graphics.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx.media.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx.swing.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx.web.jar",
+        "c:\\Users\\count\\Documents\\GitHub\\javafx-sdk-11.0.2\\lib\\javafx-swt.jar"
+    ]
+}

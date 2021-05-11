@@ -1,0 +1,36 @@
+Jumble Solver is a backtracking solution to solving jumble word puzzles.
+For example:  Jumble = ogd  Solved = dog.
+The solver reads in a list of valid words from "words.txt" which you must use to
+validate partial words as well as final goal words.
+
+Your task:
+Complete the JumbleSolver backtracking methods in JumbleSolver.java
+    getSuccessors()
+    isValid()
+    isGoal()
+
+*** NOTE ***  You MAY have to modify the PATH in the first call in Main()
+              in order to get the words file to read properly
+
+Expected Output:
+   No solution found for jumble: zzz
+   unf solution is: fun
+   wlyasa solution is: always
+   rshtea solution is: hearts
+   blscu solution is: clubs
+   dmersia solution is: misread
+   seay solution is: easy
+   No solution found for jumble: foobar
+
+Hints:
+1) In Java Strings are immutable
+   so you can make a copy
+   by simply creating a new String
+   and assigning an existing String to it.
+
+2) Java has a String method "startsWith()" which should prove useful
+
+3) Java sets have a method "contains()" which should also prove useful
+
+4) JumbleSolver implements Configuration which means 
+   getSuccessors() should create a collection of ALL possible next Configurations.

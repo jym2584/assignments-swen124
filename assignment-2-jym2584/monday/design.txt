@@ -1,0 +1,15 @@
+StarWarsBattle
+
+
+Ship
+    name
+    Hull Rating: int
+    Shield: int
+    Armament
+    Take Damage
+
+Weapon
+    name
+    damage type
+    blast color
+    damage amountxc

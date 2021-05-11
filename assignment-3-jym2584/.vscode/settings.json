@@ -1,0 +1,12 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\count\\Documents\\1. School\\Spring 2021\\junit-platform-console-standalone-1.7.0-all.jar"
+    ],
+    "cSpell.words": [
+        "regen"
+    ],
+    "cSpell.ignoreWords": [
+        "msrp"
+    ]
+}

@@ -1,0 +1,16 @@
+Library:
+    Books
+    Patrons
+    checkout()
+    return()
+
+Book:
+    Title: str
+    Author: str
+    Copies: int
+    checkoutBook() 
+    returnBook()
+
+Patron:
+    Name
+    checkedOutBooks
